@@ -10,7 +10,7 @@ Special Discount Rule:
 Goal:
 - Return an array `answer` where `answer[i]` is the final price paid for the ith item, considering the special discount.
 
-Examples:
+    Examples:
 ---------
 1. Input: prices = [8, 4, 6, 2, 3]
    Output: [4, 2, 4, 2, 3]
@@ -49,12 +49,13 @@ from typing import List
 
 
 class Solution:
-    def finalPrices(self, prices: List[int]) -> List[int]:
-        dq = deque()
+    def maxChunksToSorted(self, arr: List[int]) -> int:
+        max_so_far = 0
+        res = 0
+        for i, d in enumerate(arr):
+            max_so_far = max(max_so_far, d)
+            if max_so_far == i:
+                res += 1
+        return res
 
-        for i, val in enumerate(prices):
-            while dq and prices[dq[-1]] >= val:
-                prices[dq.pop()] -= val
-            dq.append(i)
 
-        return prices
