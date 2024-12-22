@@ -9,7 +9,7 @@ class Solution:
         if not root:
             return root
 
-        if root.val > key:
+        if root.valx > key:
             root.left = self.deleteNode(root.left, key)
         elif root.val < key:
             root.right = self.deleteNode(root.right, key)
