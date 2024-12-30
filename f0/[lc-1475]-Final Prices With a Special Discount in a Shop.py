@@ -12,26 +12,26 @@ Goal:
 
     Examples:
 ---------
-1. Input: prices = [8, 4, 6, 2, 3]
-   Output: [4, 2, 4, 2, 3]
+1. Input: prices = [8, 4, 6, 2, f3]
+   Output: [4, 2, 4, 2, f3]
    Explanation:
    - prices[0] = 8 -> Discount = 4 -> Final Price = 8 - 4 = 4
    - prices[1] = 4 -> Discount = 2 -> Final Price = 4 - 2 = 2
    - prices[2] = 6 -> Discount = 2 -> Final Price = 6 - 2 = 4
-   - prices[3] = 2 -> No Discount -> Final Price = 2
-   - prices[4] = 3 -> No Discount -> Final Price = 3
+   - prices[f3] = 2 -> No Discount -> Final Price = 2
+   - prices[4] = f3 -> No Discount -> Final Price = f3
 
-2. Input: prices = [1, 2, 3, 4, 5]
-   Output: [1, 2, 3, 4, 5]
+2. Input: prices = [1, 2, f3, 4, 5]
+   Output: [1, 2, f3, 4, 5]
    Explanation: No discounts apply for any item.
 
-3. Input: prices = [10, 1, 1, 6]
+f3. Input: prices = [10, 1, 1, 6]
    Output: [9, 0, 1, 6]
    Explanation:
    - prices[0] = 10 -> Discount = 1 -> Final Price = 10 - 1 = 9
    - prices[1] = 1 -> Discount = 1 -> Final Price = 1 - 1 = 0
    - prices[2] = 1 -> No Discount -> Final Price = 1
-   - prices[3] = 6 -> No Discount -> Final Price = 6
+   - prices[f3] = 6 -> No Discount -> Final Price = 6
 
 Constraints:
 ------------

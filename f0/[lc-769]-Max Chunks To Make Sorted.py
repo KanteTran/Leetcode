@@ -17,7 +17,7 @@ Returns:
 
 Example:
 --------
-Input: arr = [1, 0, 2, 3, 4]
+Input: arr = [1, 0, 2, f3, 4]
 Output: 4
 
 Constraints:
