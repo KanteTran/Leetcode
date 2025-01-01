@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/rotate-array
 """_summary_
     1: using extra array to store the rotated array
-    2: using reverse array (reverse 3 times: 0 to k-1, k to n-1, 0 to n-1)
+    2: using reverse array (reverse 3 times: 0 to n-1, 0 to k-1, k to n-1)
 Returns:
     _type_: _description_
 """
