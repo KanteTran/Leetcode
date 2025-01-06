@@ -8,12 +8,13 @@ class Solution:
         # second is the can jump into
 
         dp[stones[0]].add(0)
-        for ind, loc in enumerate(stones):
-            for jump in dp[loc]:
-                for step in [jump, jump -1, jump+ 1]:
-                    if step > 0 and loc + step in dp:
-                        dp[loc + step].add(step)
+        for loc in stones:
+            possible_jumps = dp[loc]
+            next_steps = [jump + step for jump in possible_jumps for step in [-1, 0, 1] if jump + step > 0]
 
+            for step in next_steps:
+                if loc + step in dp:
+                    dp[loc + step].add(step)
         # print(dp)
         return len(dp[stones[-1]]) != 0
 
